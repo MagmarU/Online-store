@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/user-icon-for-logined.js"></script>
+    <script src="./js/jquery.js"></script>
     <title>Electro</title>
 </head>
 
@@ -30,7 +32,11 @@
                         </div>
 
                         <ul class="header-menu">
-                            <li><a href="./userPanel.php"><img src="./img/user.png" alt="user"></a></li>
+                            <li><a href="./userPanel.php" class="user_icon_button"><img src="./img/user.png" class="user_icon" alt="user"></a>
+                                <div class="exitFromAcc" hidden>
+                                    <button class="catalogBtns exitFromAccount">Выйти</button>
+                                </div>
+                            </li>
                             <li><a href="./cart.php" style="margin-left:13px;"><img src="./img/shopping-cart.png" alt="cart"></a></li>
                         </ul>
                     </div>
@@ -198,4 +204,3 @@
 </body>
 
 </html>
-

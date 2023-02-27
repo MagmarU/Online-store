@@ -31,4 +31,3 @@ btn.addEventListener( "click", function(event) {
 } );
 
 let product = document.querySelector('.product');
-console.log( product );

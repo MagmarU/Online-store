@@ -1,38 +1,56 @@
+class User{
+    constructor( form, action ) {
+        form = new FormData(form);
+        form = Object.fromEntries( form.entries() );
+        Object.assign( this, form );
+
+        this.tableName = 'Покупатели';
+        this.action = action;
+        
+        this.ecryptionPassword( this.password );
+    }
+    ecryptionPassword( password ) {
+        this.password = md5( password );
+    }
+};
+
+
 $(document).ready(function () {
     $('.login-panel>form').submit(function (e) {
         e.preventDefault();
         if ( e.target.getAttribute('name') === 'registration_form' ) {
-            let form = new FormData(this);
-            let user = Object.fromEntries( form.entries() );
-            user.tableName = 'Пользователи';
+            let user = new User( this, 'registration' );
             $.ajax({
                 type: 'POST',
                 url: './authorization/handler.php',
                 data: user,
                 cache: false,
             }).done(function(result){
-                console.log( result );
+                alert( result );
             });
-            // for (let [name, value] of form) {
-            //     console.log(name, value)
-            // }
 
         } else if( e.target.getAttribute('name') === 'login_form' ) {
-            let form = new FormData( this );
-
-            let obj = Object.fromEntries( form.entries() );
-            console.log( obj );
-            // $.ajax({
-            //     type: 'POST',
-            //     url: 'handler.php',
-            //     data:{
-            //         // name: 
-            //     }
-            // })
-
-            // for( let [name, value] of form ) {
-            //     console.log( value, name );
-            // }
+            let user = new User( this, 'login' )
+            $.ajax({
+                url: './authorization/handler.php',
+                type: 'POST',
+                data: user,
+            }).done(function(result){
+                result = JSON.parse( result );
+                for( let elem of result ) {
+                    if( user['email'] == elem['email'] || user['password'] == elem['password'] ) {
+                        console.log( 'Вы авторизовались' );
+                        $.ajax({
+                            method: 'POST',
+                            data: {
+                                action: 'entered',
+                            },
+                            url: './authorization/login.php'
+                        });
+                        break;
+                    }
+                }
+            });
         }
 
     });

@@ -12,6 +12,7 @@
     <!-- <script defer src="./js/script.js"></script> -->
     <script src="./js/jquery.js"></script>
     <script defer src="./js/registration.js"></script>
+    <script src="./node_modules/blueimp-md5/js/md5.min.js"></script>
     <title>Electro</title>
 </head>
 
@@ -60,18 +61,18 @@
                             <div class="login-panel">
                                 <form action="" method="POST" name="registration_form" class="form-grid">
 
-                                    <div class="tele-email-panel">
+                                    <div class="userName-panel">
                                         <label for="userName">Имя</label>
-                                        <div class="userInput"><input type="text" name="name"></div>
+                                        <div class="userInput"><input type="text" name="userName" required></div>
                                     </div>
                                     <div class="tele-email-panel">
-                                        <label for="email">Телефон или Email</label>
-                                        <div class="userInput"><input type="text" name="email"></div>
+                                        <label for="email">Email</label>
+                                        <div class="userInput"><input type="text" name="email" required></div>
                                     </div>
                                     <div class="password-panel">
                                         <label for="password">Пароль</label>
 
-                                        <div class="userInput"><input type="text" name="password"></div>
+                                        <div class="userInput"><input type="text" name="password" required></div>
                                     </div>
                                     <div class="submit-btns">
                                         <button class="catalogBtns">Зарегистрироваться</button>
