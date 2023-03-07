@@ -20,14 +20,17 @@ let obj = {
 }
 
 
-let btn = document.body.querySelector('.slick-nav');
-btn.addEventListener( "click", function(event) {
-    if( event.target.tagName == "BUTTON" ) {
-        let carousel = event.target.closest('.row').querySelector('.product-tabs');
-        let list = carousel.querySelector('ul');
-        let listItems = carousel.querySelectorAll('li');
-        obj[event.target.dataset.action]( listItems, list );
-    }
-} );
+let btns = document.body.querySelectorAll('.slick-nav');
+for( let btn of btns ) {
+    btn.addEventListener( "click", function(event) {
+        if( event.target.tagName == "BUTTON" ) {
+            let carousel = event.target.closest('.row').querySelector('.product-tabs');
+            let list = carousel.querySelector('ul');
+            let listItems = carousel.querySelectorAll('li');
+            obj[event.target.dataset.action]( listItems, list );
+        }
+    } );
+}
+
 
 let product = document.querySelector('.product');

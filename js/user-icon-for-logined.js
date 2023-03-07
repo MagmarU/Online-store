@@ -5,13 +5,18 @@ let btns = document.body.querySelector('.header-menu>li');
 btns.addEventListener( 'click', function(event) {
     event.preventDefault();
     console.log( 1 );
+    // Отправляет запрос в login.php, чтобы получить статус, вошёл пользователь или нет
     $.ajax({
         url: './authorization/login.php',
         method: 'POST',
         data: {
             action: 'checkStatus'
         }
-    }).done(function(result) {
+    })
+    // ------------------------------------------------------------------
+    // При успешной отправке проверяет результат
+    .done(function(result) {
+        // Если пользователь вошёл, то делает блок с кнопкой выхода видимым, иначе переходит на страницу входа
         if( result == 'logined' ){
             if( event.target.className == 'user_icon' ) {
                 event.target.closest('.header-menu').querySelector('.exitFromAcc').hidden = false;
@@ -31,6 +36,7 @@ btns.addEventListener( 'click', function(event) {
         }
 
     });
+    // ---------------------------------------------------------------------
 });
 // ---------------------------------------------------------------------
 
