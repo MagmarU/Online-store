@@ -85,7 +85,7 @@
                                             <input type="text" name="item_RAM">
                                         </div>
 
-                                        </form> 
+                                    </form> 
                                 </div>
 
                                 <div class="cpu" name="Процессор" hidden>

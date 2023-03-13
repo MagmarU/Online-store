@@ -25,12 +25,14 @@
                     <div class="header-wrap">
                         <div class="logo"><img src="./img/logo.png" alt=""></div>
 
-                        <div class="search-bar">
+                        <!-- На диплом -->
+                        <!-- <div class="search-bar">
                             <form action="">
                                 <input class="input" placeholder="Поиск по сайту">
                                 <button class="search-btn">Поиск</button>
                             </form>
-                        </div>
+                        </div> -->
+                        <!--  -->
 
                         <ul class="header-menu">
                             <li><a href="./userPanel.php" class="user_icon_button"><img src="./img/user.png" class="user_icon" alt="user"></a>
@@ -61,113 +63,13 @@
                     <div class="row" name="Материнская плата">
                         <div class="section-header">
                             <span>Материнские платы</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/motherboards.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
                             <div class="product-tabs">
 
                                 <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
                                     <li>
                                         <div class="product">
                                             <div class="product-image">
@@ -188,125 +90,15 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Процессор">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Процессоры</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
                             <div class="product-tabs">
                                 <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -317,9 +109,9 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Видеокарта">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Видеокарты</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
@@ -327,116 +119,7 @@
                             <div class="product-tabs">
 
                                 <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -447,127 +130,18 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Жесткий диск">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Жесткие диски</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
                             <div class="product-tabs">
 
-                                <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                               <ul>
+
+                               </ul>
                             </div>
                         </div>
 
@@ -577,127 +151,18 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Оперативная память">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Оперативная память</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
                             <div class="product-tabs">
 
-                                <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                               <ul>
+
+                               </ul>
                             </div>
                         </div>
 
@@ -707,9 +172,9 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Твердотельный накопитель">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Твердотельные накопители</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
@@ -717,116 +182,7 @@
                             <div class="product-tabs">
 
                                 <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -837,127 +193,18 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
+                    <div class="row" name="Блок питания">
                         <div class="section-header">
-                            <span>Материнские платы</span>
+                            <span>Блоки питания</span>
                             <a href="./catalog.php">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
                             <div class="product-tabs">
 
-                                <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                               <ul>
+
+                               </ul>
                             </div>
                         </div>
 
@@ -967,146 +214,6 @@
                         </div>
                     </div>
 
-                    <div class="row" name="Материнская плата">
-                        <div class="section-header">
-                            <span>Материнские платы</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
-                        </div>
-
-                        <div class="products">
-                            <div class="product-tabs">
-
-                                <ul>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="product">
-                                            <div class="product-image">
-                                                <img src="./img/1801063.jpg" alt="">
-                                            </div>
-                                            <span>Gigabyte B550 Gaming X V2</span>
-                                            <span
-                                                style="font-size: 1.2rem; font-weight: 700; color: #D10024;">Price</span>
-                                        </div>
-                                    </li>
-                                    <!-- <li><img src="https://ru.js.cx/carousel/1.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/2.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/3.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/4.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/5.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/6.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/7.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/8.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/9.png"></li>
-                                    <li><img src="https://ru.js.cx/carousel/10.png"></li> -->
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="slick-nav">
-                            <button class="slick-btn slick-prev" data-action="prev" type="button">&#60;</button>
-                            <button class="slick-btn slick-next" data-action="next" type="button">&#62;</button>
-                        </div>
-                    </div>
-                    
                 </div>
             </section>
         </main>

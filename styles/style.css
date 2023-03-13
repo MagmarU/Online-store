@@ -107,7 +107,7 @@ header{
 }
 
 .navbar-menu{
-    list-style-type: none;
+    /* list-style-type: none; */
     display: flex;
     flex-flow: row;
 
@@ -222,11 +222,12 @@ main>section>.container{
 
 .product{
     max-width: 210px;
-    max-height: 360px;
+    height: 310px;
     display: flex;
     flex-flow: column;
     align-items: center;
     margin: 0 12.25px !important;
+    justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
 }

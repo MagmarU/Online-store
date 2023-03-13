@@ -1,8 +1,8 @@
-let btns = document.body.querySelector('.header-menu>li');
+let bttns = document.body.querySelector('.header-menu>li');
 
 // Проверка на клик в панели навигации именно на иконку пользователя, потому что querySelector
 // берёт первый подходящий элемент
-btns.addEventListener( 'click', function(event) {
+bttns.addEventListener( 'click', function(event) {
     event.preventDefault();
     console.log( 1 );
     // Отправляет запрос в login.php, чтобы получить статус, вошёл пользователь или нет

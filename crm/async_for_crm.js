@@ -25,9 +25,7 @@ $(document).ready(function() {
         }
 
         categoriesBlock = document.body.querySelector(`.adding>div[name= '${this.value}']`);
-        console.log( categoriesBlock );
         formBlock = categoriesBlock.querySelector('form');
-        
         if( categoriesBlock ) categoriesBlock.hidden = false; formBlock.setAttribute('id', 'form');
         
     });
@@ -36,13 +34,10 @@ $(document).ready(function() {
     let item_article_input = document.body.querySelector(`input[name = 'item_Article']`);
     let item_category_select = document.body.querySelector(`select[name = 'item_Category']`);
     let item_price = document.body.querySelector(`input[name='item_Price']`);
-    console.log( item_price );
-
+    
     $('form').submit(function(event) {
-
         event.preventDefault();
         let item = new FormData(this);
-        
         item = Object.fromEntries(item);
         let item_properties = {
             name: item_name_input.value,
@@ -56,8 +51,9 @@ $(document).ready(function() {
             url: 'item_adding_handler.php',
             data: item_properties,
         }).done( function(result) {
-            console.log( result );
+
         } )
     });
+    
 
 });
