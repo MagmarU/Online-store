@@ -1,6 +1,6 @@
 const descriptionGenerate = {
     'Материнская плата': {
-        
+        'item_Producer' : 'Производитель',
         'item_Form_Factor' : 'Форм-фактор', 
         'item_Socket' : 'Сокет', 
         'item_Chipset' : 'Чипсет', 
@@ -46,7 +46,7 @@ function init(obj) {
         obj[prop].description = generationDescription( obj[prop].description, obj[prop].category );
 
         fillingForm( obj[prop] );
-
+        unique( obj[prop] );
     }
     // console.log( obj ); // десериализованные товары
 }
@@ -61,13 +61,11 @@ function decodeSerialize( str ) {
 
 function generationDescription( description, category ) {
     let dsc = {};
-    // console.log( category );
+
     for( let prop in descriptionGenerate[category] ) {
         dsc[descriptionGenerate[category][prop]] = description[prop];
-        // console.log( prop );
     }
     return dsc;
-    // console.log(dsc);
     
 }
 
@@ -84,6 +82,34 @@ function generationDescription( description, category ) {
 // }
 
 let page = document.body.querySelector('[data-page]');
+let uniqueProp = new Set();
+function unique( item ) {
+
+    if( item.category == page.dataset.page){
+        for( let prop in item.description ) {
+            if( !uniqueProp.has( prop ) ) {
+                uniqueProp.add( prop );
+                fillingFilterBox( item.description[prop], prop )
+            }
+        }
+    }
+    
+}
+
+let filterBlock = document.body.querySelector(`div[name='filterWrap']`);
+
+function fillingFilterBox( content, title ) {
+    let html = `
+    <div>
+        <input type="checkbox" value="${content}">
+            <span>${content}</span>
+    </div>        
+    `;
+    filterBlock.querySelector(`[data-title='${title}']`).innerHTML += html;
+    return html;
+    
+}
+
 
 function fillingForm( item ){
 
@@ -120,3 +146,18 @@ function objToHtml( description ) {
     }
     return html;
 }
+
+
+// Обработчик кнопки применить в фильтр-боксе, получает данные только с чекбоксов
+// Надо ещё сделать получение интервала цены, но это уже после того как разберусь как работает
+// фильтрация
+$('.catalogBtns').click('click', function(event){
+    event.preventDefault();
+    let values = [];
+    $('input:checked').each( function() {
+        values.push( $(this).val() );
+    } );
+    console.log( values );
+});
+
+// --------------------------------------------

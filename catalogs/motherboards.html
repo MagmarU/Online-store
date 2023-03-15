@@ -23,19 +23,24 @@
             <div class="header-content">
                 <div class="header_container">
                     <div class="header-wrap">
-                        <div class="logo"><img src="../img/logo.png" alt=""></div>
+                        <div class="logo"><img src="./img/logo.png" alt=""></div>
 
-                        <div class="search-bar">
+                        <!-- На диплом -->
+                        <!-- <div class="search-bar">
                             <form action="">
                                 <input class="input" placeholder="Поиск по сайту">
                                 <button class="search-btn">Поиск</button>
                             </form>
-                        </div>
+                        </div> -->
+                        <!--  -->
 
                         <ul class="header-menu">
-                            <li><a href="../userPanel.php"><img src="../img/user.png" alt="user"></a></li>
-                            <li><a href="../cart.php" style="margin-left:13px;"><img src="../img/shopping-cart.png" alt="cart"></a>
+                            <li><a href="./userPanel.php" class="user_icon_button"><img src="./img/user.png" class="user_icon" alt="user"></a>
+                                <div class="exitFromAcc" hidden>
+                                    <button class="catalogBtns exitFromAccount">Выйти</button>
+                                </div>
                             </li>
+                            <li><a href="./cart.php" style="margin-left:13px;"><img src="./img/shopping-cart.png" alt="cart"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,9 +62,9 @@
                 <div class="container">
 
                     <div class="filterBlock">
-                        <div class="aside">
-                            <h2 class="aside-title br-btm">Фильтры</h3>
-                                <div class="checkbox-filter">
+                        <h2 class="aside-title br-btm">Фильтры</h3>
+                            <div class="checkbox-filter">
+                                <form action="">
                                     <div class="input-checkbox">
                                         <h3>Цена</h3>
                                         <div class="price-filter br-btm">
@@ -70,51 +75,42 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="input-checkbox br-btm">
-                                        <h3>Бренд</h3>
-                                        <div class="brand-filter">
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="brand-1">
-                                                <label for="brand-1">
-                                                    <span></span>
-                                                    SAMSUNG
-                                                </label>
-                                            </div>
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="brand-2">
-                                                <label for="brand-2">
-                                                    <span></span>
-                                                    LG
-                                                </label>
-                                            </div>
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="brand-3">
-                                                <label for="brand-3">
-                                                    <span></span>
-                                                    SONY
-                                                </label>
-                                            </div>
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="brand-4">
-                                                <label for="brand-4">
-                                                    <span></span>
-                                                    SAMSUNG
-                                                </label>
-                                            </div>
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="brand-5">
-                                                <label for="brand-5">
-                                                    <span></span>
-                                                    LG
-                                                </label>
-                                            </div>
-                                        </div>
+
+                                    <div class="input-checkbox br-btm" name="filterWrap">
+
+                                        <h3>Производитель</h3>
+                                        <label data-title='Производитель'>
+                                        </label>
+
+                                        <h3>Форм-фактор</h3>
+                                        <label data-title='Форм-фактор'>
+                                        </label>
+
+                                        <h3>Сокет</h3>
+                                        <label data-title='Сокет'>
+                                        </label>
+
+                                        <h3>Чипсет</h3>
+                                        <label data-title='Чипсет'>
+                                        </label>
+
+                                        <h3>Количество слотов памяти</h3>
+                                        <label data-title='Количество слотов памяти'>
+                                        </label>
+
+                                        <h3>Тип озу</h3>
+                                        <label data-title='Тип озу'>
+                                        </label>
+
+
+
                                     </div>
+
                                     <div class="input-checkbox" style="padding: 20px;">
-                                        <button class="catalogBtns"><span>Применить</span></button>
+                                        <button class="catalogBtns" type="submit"><span>Применить</span></button>
                                     </div>
-                                </div>
-                        </div>
+                                </form>
+                            </div>
                     </div>
 
                     <div class="productCatalog" data-page="Материнская плата">
@@ -206,7 +202,7 @@
                                 <button class="inCart catalogBtns"><span>В корзину</span></button>
                             </div>
                         </div>
-                        
+
                         <div class="productModel br-btm br-rght">
                             <div class="product-image">
                                 <img src="../img/1801063.jpg" alt="">
@@ -228,7 +224,7 @@
                                 <button class="inCart catalogBtns"><span>В корзину</span></button>
                             </div>
                         </div>
-                        
+
                         <div class="productModel br-btm br-rght">
                             <div class="product-image">
                                 <img src="../img/1801063.jpg" alt="">
@@ -250,7 +246,7 @@
                                 <button class="inCart catalogBtns"><span>В корзину</span></button>
                             </div>
                         </div>
-                        
+
                         <div class="productModel br-btm br-rght">
                             <div class="product-image">
                                 <img src="../img/1801063.jpg" alt="">

@@ -22,17 +22,22 @@
                     <div class="header-wrap">
                         <div class="logo"><img src="./img/logo.png" alt=""></div>
 
-                        <div class="search-bar">
+                        <!-- На диплом -->
+                        <!-- <div class="search-bar">
                             <form action="">
                                 <input class="input" placeholder="Поиск по сайту">
                                 <button class="search-btn">Поиск</button>
                             </form>
-                        </div>
+                        </div> -->
+                        <!--  -->
 
                         <ul class="header-menu">
-                            <li><a href="./userPanel.php"><img src="./img/user.png" alt="user"></a></li>
-                            <li><a href="./cart.php" style="margin-left:13px;"><img src="./img/shopping-cart.png"
-                                        alt="cart"></a></li>
+                            <li><a href="./userPanel.php" class="user_icon_button"><img src="./img/user.png" class="user_icon" alt="user"></a>
+                                <div class="exitFromAcc" hidden>
+                                    <button class="catalogBtns exitFromAccount">Выйти</button>
+                                </div>
+                            </li>
+                            <li><a href="./cart.php" style="margin-left:13px;"><img src="./img/shopping-cart.png" alt="cart"></a></li>
                         </ul>
                     </div>
                 </div>
