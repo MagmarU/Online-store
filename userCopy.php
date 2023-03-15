@@ -22,7 +22,8 @@
             <div class="header-content">
                 <div class="header_container">
                     <div class="header-wrap">
-                        <div class="logo"><img src="./img/logo.png" alt=""></div>
+                        <div class="logo"><a href="../main.php"><img src="./img/logo.png" alt=""></a></div>
+
 
                         <!-- На диплом -->
                         <!-- <div class="search-bar">
@@ -45,15 +46,6 @@
                 </div>
             </div>
         </header>
-
-        <nav class="nav">
-            <div class="navbar_container">
-                <ul class="navbar-menu">
-                    <li><a href="./main.php">Главная</a></li>
-                    <li style="margin-left:36px;"><a href="./catalog.php">Каталог</a></li>
-                </ul>
-            </div>
-        </nav>
 
         <main>
             <section class="userCabinet">

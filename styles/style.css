@@ -92,56 +92,6 @@ header{
 
 /* //HEADER */
 
-
-
-/* NAVIGATION */
-
-
-.nav{
-    border: 1px solid #e6e6e6;
-}
-
-.navbar_container{
-    max-width: 938px;
-    margin: 0 auto;
-}
-
-.navbar-menu{
-    /* list-style-type: none; */
-    display: flex;
-    flex-flow: row;
-
-}
-.navbar-menu li {
-    display: flex;
-}
-.navbar-menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 0.8;
-    transition: all .2s ease-in;
-    padding: 14px 0;
-}
-.navbar-menu li a:hover, .navbar-menu li a:focus, .navbar-menu li.active>a{
-    color: #D10024;
-}
-.navbar-menu li a:hover::after{
-    width: 100%;
-}
-.navbar-menu li a:after{
-    display: block;
-    content: '';
-    height: 2px;
-    width: 0;
-    background-color: #D10024;
-    transition: width 0.2s ease-out;
-}
-
-/* //NAVIGATION */
-
-
 main>section>.container{
     max-width: 938px;
     margin: 0 auto;
