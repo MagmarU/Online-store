@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script defer src="../js/price-slider.js"></script>
+    <script defer src="catalog_fill.js"></script>
+    <title>Electro</title>
+</head>
+
+<body>
+    <div class="page-layout">
+
+        <header>
+            <div class="header-content">
+                <div class="header_container">
+                    <div class="header-wrap">
+                        <div class="logo"><a href="../main.php"><img src="../img/logo.png" alt=""></a></div>
+
+
+                        <!-- На диплом -->
+                        <!-- <div class="search-bar">
+                            <form action="">
+                                <input class="input" placeholder="Поиск по сайту">
+                                <button class="search-btn">Поиск</button>
+                            </form>
+                        </div> -->
+                        <!--  -->
+
+                        <ul class="header-menu">
+                            <li><a href="../userPanel.php" class="user_icon_button"><img src="../img/user.png" class="user_icon" alt="user"></a>
+                                <div class="exitFromAcc" hidden>
+                                    <button class="catalogBtns exitFromAccount">Выйти</button>
+                                </div>
+                            </li>
+                            <li><a href="../cart.php" style="margin-left:13px;"><img src="../img/shopping-cart.png" alt="cart"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="catalog_section">
+                <div class="container">
+
+                    <div class="filterBlock">
+                        <h2 class="aside-title br-btm">Фильтры</h3>
+                            <div class="checkbox-filter">
+                                <form action="">
+                                    <div class="input-checkbox">
+                                        <h3>Цена</h3>
+                                        <div class="price-filter br-btm">
+                                            <div class="price-slider">
+                                                <input type="text" class="price-slider-left" />
+                                                <input type="text" class="price-slider-right " />
+                                                <div class="price"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-checkbox br-btm" name="filterWrap">
+
+                                        <h3>Производитель</h3>
+                                        <label data-title='Производитель'>
+                                        </label>
+
+                                        <h3>Тип накопителя</h3>
+                                        <label data-title='Тип накопителя'>
+                                        </label>
+
+                                        <h3>Объём накопителя</h3>
+                                        <label data-title='Объём накопителя'>
+                                        </label>
+
+                                        <h3>Форм-фактор</h3>
+                                        <label data-title='Форм-фактор'>
+                                        </label>
+
+                                        <h3>Разъём подключения</h3>
+                                        <label data-title='Разъём подключения'>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="input-checkbox" style="padding: 20px;">
+                                        <button class="catalogBtns" type="submit"><span>Применить</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+
+                    <div class="productCatalog" data-page="Твердотельный накопитель">
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>

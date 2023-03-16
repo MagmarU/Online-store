@@ -274,6 +274,7 @@ main>section>.container{
 
 /* PRODUCT CATALOG */
 .filterBlock{
+    max-width: 261px;
     border: 1px solid rgba(237, 237, 237);
     padding: 10px 10px 0 10px;
 }

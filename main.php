@@ -85,7 +85,7 @@
                     <div class="row" name="Процессор">
                         <div class="section-header">
                             <span>Процессоры</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/processors.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
@@ -104,7 +104,7 @@
                     <div class="row" name="Видеокарта">
                         <div class="section-header">
                             <span>Видеокарты</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/graphicsCards.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
@@ -125,7 +125,7 @@
                     <div class="row" name="Жесткий диск">
                         <div class="section-header">
                             <span>Жесткие диски</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/hdd.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
@@ -146,7 +146,7 @@
                     <div class="row" name="Оперативная память">
                         <div class="section-header">
                             <span>Оперативная память</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/ram.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
@@ -167,7 +167,7 @@
                     <div class="row" name="Твердотельный накопитель">
                         <div class="section-header">
                             <span>Твердотельные накопители</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/ssd.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
@@ -188,7 +188,7 @@
                     <div class="row" name="Блок питания">
                         <div class="section-header">
                             <span>Блоки питания</span>
-                            <a href="./catalog.php">Перейти в каталог</a>
+                            <a href="./catalogs/psu.html">Перейти в каталог</a>
                         </div>
 
                         <div class="products">
