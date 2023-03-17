@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <script defer src="./js/script.js"></script>
+
+    <script defer src="./cart_js/cart_handler.js"></script>
     <title>Electro</title>
 </head>
 
@@ -55,7 +57,6 @@
 
                         <div class="cart-wrapper">
 
-
                             <div class="productCart br-btm">
                                 <img src="./img/1801063.jpg" class="item-image">
 
@@ -65,9 +66,9 @@
 
                                 <div class="item-counter">
                                     <div class="counter-wrapper">
-                                        <button class="minus counter-btn">-</button>
+                                        <button class="minus counter-btn" data-action = 'minus'>-</button>
                                         <input type="text" value="1">
-                                        <button class="plus counter-btn">+</button>
+                                        <button class="plus counter-btn" data-action = 'plus'>+</button>
                                     </div>
 
                                 </div>
