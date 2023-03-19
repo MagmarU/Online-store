@@ -8,7 +8,6 @@ let filterBlock = document.body.querySelector(`div[name='filterWrap']`);
 init( JSON.parse( localStorage.getItem('items') ) )
     .then( cartButtonHandler() );
 
-
 function init(obj) {
     return new Promise( resolve => {
         for( let prop in obj ) {
@@ -56,7 +55,7 @@ function fillingForm( item ){
                                 <img src="../img/errfolder.jpg" alt="">
                             </div>
                             <div class="productName">
-                                <span>${item.name}</span>
+                                <span><a href="../productCard/itemCard.html#${item.ID}">${item.name}</a></span>
                                 <div class="description">
                                     <ul>
                                         ${objToHtml(item.description)}

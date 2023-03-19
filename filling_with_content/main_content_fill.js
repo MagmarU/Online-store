@@ -108,7 +108,7 @@ function serializeItem( item ) {
     <div class="product-image">
         <img src="./img/errfolder.jpg">
     </div>
-    <span>${item.name}</span>
+    <span><a href="../productCard/itemCard.html#${item.ID}">${item.name}</a></span>
     <span
         style="font-size: 1.2rem; font-weight: 700; color: #D10024;">${item.price} руб.</span>
     </div>
