@@ -487,6 +487,11 @@ main>section>.container{
     padding: 1.5rem;
 }
 
+.emptyCart{
+    /* padding-top: 20px; */
+    font-size: 20px;
+}
+
 
 /* //CART */
 
@@ -540,10 +545,7 @@ main>section>.container{
 /* PRODUCT CARD DETAILED */
 
 .productCard_detailed{
-    /* background: ; */
     margin-top: 15px;
-    /* padding: 15px; */
-    /* border: 1px solid rgb(237, 237, 237, .8); */
 }
 
 .product_img img{

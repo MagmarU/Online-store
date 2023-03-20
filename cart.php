@@ -62,7 +62,7 @@
                             <div class="order-wrapper">
                                 <div class="total">
                                     <span>Итого:</span>
-                                    <span style="font-size: 1.7rem;">Total Price</span>
+                                    <span class="total_price" style="font-size: 1.7rem;">Total Price</span>
                                 </div>
                                 <button class="catalogBtns"><span>Оформить заказ</span></button>
                             </div>

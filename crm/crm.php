@@ -38,7 +38,6 @@
                                     <label for="">Наименование товара</label>
                                     <input type="text" name="item_Name">
                                 </div>
-
                                 <div class="item">
                                     <label for="">Артикул</label>
                                     <input type="text" name="item_Article">

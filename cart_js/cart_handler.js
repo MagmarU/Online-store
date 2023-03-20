@@ -1,19 +1,19 @@
 let block = document.body.querySelector('.cart-wrapper');
 
-let observer = new MutationObserver( MutationRecords => {
-    console.log( MutationRecords );
-} );
-
 let cart = JSON.parse(localStorage.getItem('cart'));
+let items = JSON.parse(localStorage.getItem('items'));
+
 function init( items, cart ) {
     // return new Promise( resolve => {
         for( let prop in cart ) {
             
             addItem( items[prop], cart );
         }
+        totalPrice();
     // });
 }
-init( JSON.parse(localStorage.getItem('items')), cart );
+emptyCart();
+init( items, cart );
 
 function addItem( item, cart ) {
     let html = `
@@ -44,6 +44,22 @@ function addItem( item, cart ) {
     
 }
 
+function totalPrice() {
+    let totalPrice = 0;
+    for( let prop in cart ) {
+        totalPrice += items[prop].price * cart[prop];
+    }
+    document.body.querySelector('.total_price').textContent = totalPrice + ' ₽';
+}
+
+function emptyCart() {
+    if( Object.keys(cart).length == 0 ) {
+        block.innerHTML += '<span class="emptyCart">Ваша корзина пуста</span>';
+        document.body.querySelector('.order-wrapper').style.display = 'none';
+    }
+}
+
+
 let counter_btns = document.body.querySelectorAll( '.counter-btn' );
 
 for( let btn of counter_btns ){
@@ -53,6 +69,7 @@ for( let btn of counter_btns ){
             this.target.querySelector('.counter-wrapper>input').value++;
             cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
             this.init();
+            totalPrice();
         },
         minus() {
             let selector = this.target.querySelector('.counter-wrapper>input');
@@ -63,6 +80,8 @@ for( let btn of counter_btns ){
                 selector.value--;
                 cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
             }
+            totalPrice();
+            emptyCart();
             this.init();
         },
         init() {
