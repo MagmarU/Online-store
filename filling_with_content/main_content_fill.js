@@ -106,7 +106,7 @@ function serializeItem( item ) {
     let html = `
     <div class="product">
     <div class="product-image">
-        <img src="./img/errfolder.jpg">
+        <img src="${item.img}">
     </div>
     <span><a href="../productCard/itemCard.html#${item.ID}">${item.name}</a></span>
     <span

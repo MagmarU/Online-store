@@ -39,6 +39,11 @@
                                     <input type="text" name="item_Name">
                                 </div>
                                 <div class="item">
+                                    <!-- <form action="" enctype="multipart/formdata"></form> -->
+                                    <input type="file" name="item_Image">
+                                </div>
+
+                                <div class="item">
                                     <label for="">Артикул</label>
                                     <input type="text" name="item_Article">
                                 </div>

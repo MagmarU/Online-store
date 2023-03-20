@@ -15,7 +15,7 @@ function init( item, block ) {
         let html = `
             <div class="product_name"><span>${item.name}</span></div>
             <div class="product_main_content">
-                <div class="product_img"><img src="../img/errfolder.jpg" alt=""></div>
+                <div class="product_img"><img src="${item.img}" alt=""></div>
                 <div class="product_navigation">
                     <div class="product_price"><span>${item.price} ₽</span></div>
                     <div class="add_to_cart"><button class="inCart add_to_cart_btn catalogBtns" data-id="${item.ID}">В корзину</button></div>

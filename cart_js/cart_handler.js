@@ -18,7 +18,7 @@ init( items, cart );
 function addItem( item, cart ) {
     let html = `
     <div class="productCart br-btm" data-id='${item.ID}'>
-        <img src="../img/errfolder.jpg" class="item-image">
+        <img src="${item.img}" class="item-image">
 
         <span class="item-title"><a href="./productCard/itemCard.html#${item.ID}">${item.name}</a></span>
 

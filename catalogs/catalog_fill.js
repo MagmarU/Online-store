@@ -52,7 +52,7 @@ function fillingForm( item ){
         if( item.category == page.dataset.page ) {
             let html = `<div class="productModel br-btm br-rght">
                             <div class="product-image">
-                                <img src="../img/errfolder.jpg" alt="">
+                                <img src="${item.img}" alt="">
                             </div>
                             <div class="productName">
                                 <span><a href="../productCard/itemCard.html#${item.ID}">${item.name}</a></span>
