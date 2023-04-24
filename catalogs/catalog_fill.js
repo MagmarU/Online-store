@@ -1,3 +1,4 @@
+// const cartButtonHandler = require('./add-to-cart');
 import {cartButtonHandler} from './add-to-cart.js';
 let page = document.body.querySelector('[data-page]');
 let uniqueProp = new Set();

@@ -4,13 +4,11 @@ let cart = JSON.parse(localStorage.getItem('cart'));
 let items = JSON.parse(localStorage.getItem('items'));
 
 function init( items, cart ) {
-    // return new Promise( resolve => {
-        for( let prop in cart ) {
-            
-            addItem( items[prop], cart );
-        }
-        totalPrice();
-    // });
+    for( let prop in cart ) {
+        
+        addItem( items[prop], cart );
+    }
+    totalPrice();
 }
 emptyCart();
 init( items, cart );

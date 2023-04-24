@@ -2,14 +2,16 @@ class User{
     constructor( form, action ) {
         form = new FormData(form);
         form = Object.fromEntries( form.entries() );
+        // console.log(form);
+        // console.log(this);
         Object.assign( this, form );
 
         this.tableName = 'Покупатели';
         this.action = action;
         
-        this.ecryptionPassword( this.password );
+        this.encryptionPassword( this.password );
     }
-    ecryptionPassword( password ) {
+    encryptionPassword( password ) {
         this.password = md5( password );
     }
 };
@@ -30,16 +32,29 @@ $(document).ready(function () {
             });
 
         } else if( e.target.getAttribute('name') === 'login_form' ) {
-            let user = new User( this, 'login' )
+            let user = new User( this, 'login' );
+            console.log(user);
             $.ajax({
                 url: './authorization/handler.php',
                 type: 'POST',
                 data: user,
             }).done(function(result){
                 result = JSON.parse( result );
+                // console.log( (result.map( item => item.email )).includes( user['email'] ) );
+                // result = result.foreach()
+                // result = result.forEach(item => item);
+                // let parseResult = [];
+                for( let elem of result ) {
+                    // console.log( elem )
+                    // console.log( Object.entries(elem) );
+                }
+                // result.forEach(item => parseResult.push(Object.entries(item)) );
+                // console.log( parseResult );
+
+                // if( user['email'] === r )
                 for( let elem of result ) {
                     if( user['email'] == elem['email'] || user['password'] == elem['password'] ) {
-                        console.log( 'Вы авторизовались' );
+                        alert( 'Вы авторизовались' );
                         $.ajax({
                             method: 'POST',
                             data: {
@@ -49,6 +64,9 @@ $(document).ready(function () {
                         });
                         break;
                     }
+                    // else{
+                    //     alert('Вы не авторизовались');
+                    // }
                 }
             });
         }

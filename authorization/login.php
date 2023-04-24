@@ -2,7 +2,11 @@
 session_start();
 
 if( $_POST['action'] == 'checkStatus' ) {
-    echo $_SESSION['status'];
+    if( isset($_SESSION['status']) ) {
+        echo $_SESSION['status'];
+    } else {
+        echo 'unlogined';
+    }
 } elseif( $_POST['action'] == 'entered' ) {
     $_SESSION['status'] = 'logined';
 } elseif( $_POST['action'] == 'exit' ) {
