@@ -614,3 +614,38 @@ main>section>.container{
 }
 
 /* /PRODUCT CARD DETAILED */
+
+
+/* PLACE ORDER */
+
+.order_item{
+    display: flex;
+    flex-flow: column;
+}
+
+.order_item>input{
+    border: .1rem solid #dfdee2;
+    padding: 16px 17px;
+}
+
+.adress{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+.inputFields{
+    margin-top: 20px;
+}
+
+.userData{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+/* /PLACE ORDER */

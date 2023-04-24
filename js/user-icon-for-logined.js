@@ -1,13 +1,12 @@
 let bttns = document.body.querySelector('.header-menu>li');
-
 // Проверка на клик в панели навигации именно на иконку пользователя, потому что querySelector
 // берёт первый подходящий элемент
 bttns.addEventListener( 'click', function(event) {
     event.preventDefault();
-    console.log( 1 );
     // Отправляет запрос в login.php, чтобы получить статус, вошёл пользователь или нет
+    console.log( event.target );
     $.ajax({
-        url: './authorization/login.php',
+        url: '../authorization/login.php',
         method: 'POST',
         data: {
             action: 'checkStatus'
@@ -16,6 +15,7 @@ bttns.addEventListener( 'click', function(event) {
     // ------------------------------------------------------------------
     // При успешной отправке проверяет результат
     .done(function(result) {
+        console.log( result );
         // Если пользователь вошёл, то делает блок с кнопкой выхода видимым, иначе переходит на страницу входа
         if( result == 'logined' ){
             if( event.target.className == 'user_icon' ) {
@@ -23,7 +23,7 @@ bttns.addEventListener( 'click', function(event) {
             }
             else if( searchClass(event.target.classList, 'exitFromAccount') ) {
                 $.ajax({
-                    url: './authorization/login.php',
+                    url: '../authorization/login.php',
                     method: 'post',
                     data:{
                         action: 'exit',
@@ -32,7 +32,7 @@ bttns.addEventListener( 'click', function(event) {
             }
 
         } else if( result == 'unlogined' || result == '' ) {
-            window.location.href = "./userPanel.php";
+            window.location.href = "../userPanel.php";
         }
 
     });

@@ -7,9 +7,6 @@ import {cartButtonHandler} from '../catalogs/add-to-cart.js';
 init( item, block )
     .then( cartButtonHandler() );
 
-
-
-
 function init( item, block ) {
     return new Promise( resolve => {
         let html = `
@@ -42,4 +39,6 @@ function objToHtml( description ) {
     }
     return html;
 }
+
+
 

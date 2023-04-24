@@ -38,10 +38,11 @@ $(document).ready(function() {
     
     $('form').submit(function(event) {
         event.preventDefault();
+        
         item_image = item_image.files[0];
         let reader = new FileReader();
         let img;
-        let p = new Promise(resolve => {
+        let img_parse = new Promise(resolve => {
             reader.addEventListener( 'load', () => {
                 img = reader.result;
                 resolve(img);
@@ -50,9 +51,9 @@ $(document).ready(function() {
 
             // console.log( reader.readAsDataURL(item_image) );
         });
-        p.then( imgUrl => {
+        img_parse.then( imgUrl => {
 
-             let item = new FormData(this);
+            let item = new FormData(this);
             item = Object.fromEntries(item);
             let item_properties = {
                 name: item_name_input.value,
@@ -70,12 +71,7 @@ $(document).ready(function() {
                 console.log( result );
             } )
         } );
-
-       
-        
-
         
     });
-    
 
 });

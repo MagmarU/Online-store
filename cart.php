@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/user-icon-for-logined.js"></script>
 
     <script defer src="./cart_js/cart_handler.js"></script>
     <title>Electro</title>
@@ -22,7 +24,7 @@
             <div class="header-content">
                 <div class="header_container">
                     <div class="header-wrap">
-                        <div class="logo"><a href="../main.php"><img src="./img/logo.png" alt=""></a></div>
+                        <div class="logo"><a href="../index.html"><img src="./img/logo.png" alt=""></a></div>
 
 
                         <!-- На диплом -->

@@ -1,6 +1,6 @@
 $('.price').slider({
     min: 0,
-    max: 5000,
+    max: 35000,
     values: [2000,3000],
     range: true,
     animate: 'fast',
@@ -20,15 +20,15 @@ $('.price-slider input').change( function() {
     opt_right = $(".price").slider("option", "max"),
     where_left = $(".price").slider("values", 0);
 
-    if (input_left > where_right) { 
-        input_left = where_right; 
+    if (input_left > where_right) {
+        input_left = where_right;
     }
     if (input_left < opt_left) {
-        input_left = opt_left; 
+        input_left = opt_left;
     }
     if (input_left == "") {
-    input_left = 0;    
-    }        
+        input_left = 0;
+    }
     if (input_right < where_left) { 
         input_right = where_left; 
     }

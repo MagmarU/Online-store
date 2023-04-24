@@ -22,7 +22,7 @@
             <div class="header-content">
                 <div class="header_container">
                     <div class="header-wrap">
-                        <div class="logo"><a href="../main.php"><img src="./img/logo.png" alt=""></a></div>
+                        <div class="logo"><a href="../index.html"><img src="./img/logo.png" alt=""></a></div>
 
 
                         <!-- На диплом -->
@@ -68,8 +68,7 @@
                                     </div>
                                     <div class="password-panel">
                                         <label for="password">Пароль</label>
-
-                                        <div class="userInput"><input type="text" name="password" required></div>
+                                        <div class="userInput"><input type="password" name="password"></div>
                                     </div>
                                     <div class="submit-btns">
                                         <button class="catalogBtns">Зарегистрироваться</button>

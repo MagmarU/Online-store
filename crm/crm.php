@@ -18,8 +18,8 @@
             <div class="container">
                 <div class="navbar_container">
                     <ul class="navbar-menu">
-                        <li><a href="#">Добавить товар</a></li>
-                        <li style="margin-left:36px"><a href="#">Редактировать товар</a></li>
+                        <li><a href="../crm/crm.php">Добавить товар</a></li>
+                        <li style="margin-left:36px"><a href="../crm/edit_item.php">Редактировать товар</a></li>
                     </ul>
             </div>
         </nav>
