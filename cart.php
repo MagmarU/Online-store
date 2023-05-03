@@ -13,7 +13,7 @@
     <script defer src="./js/script.js"></script>
     <script defer src="./js/user-icon-for-logined.js"></script>
 
-    <script defer src="./cart_js/cart_handler.js"></script>
+    <script defer type='module' src="./cart_js/cart_handler.js"></script>
     <title>Electro</title>
 </head>
 

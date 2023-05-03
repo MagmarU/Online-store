@@ -1,3 +1,9 @@
+import {Cart} from '../catalogs/cart_module.js';
+
+let cart1 = new Cart(JSON.parse(localStorage.getItem('user')));
+cart1.onLoad();
+console.log( cart1 );
+
 let block = document.body.querySelector('.cart-wrapper');
 
 let cart = JSON.parse(localStorage.getItem('cart'));
@@ -5,7 +11,6 @@ let items = JSON.parse(localStorage.getItem('items'));
 
 function init( items, cart ) {
     for( let prop in cart ) {
-        
         addItem( items[prop], cart );
     }
     totalPrice();
@@ -64,19 +69,25 @@ for( let btn of counter_btns ){
     let obj = {
         target: btn.closest('.productCart'),
         plus() {
+            cart1.add( this.target.dataset.id );
             this.target.querySelector('.counter-wrapper>input').value++;
-            cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
+            // cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
             this.init();
             totalPrice();
         },
         minus() {
+           
+            // let selector = this.target.querySelector('.counter-wrapper>input');
+            // this.target.querySelector('.counter-wrapper>input').value--;
+            // selector.value--;
             let selector = this.target.querySelector('.counter-wrapper>input');
             if( selector.value == 1 || selector.value == 0 ) {
-                delete cart[this.target.dataset.id];
+                cart1.remove( this.target.dataset.id );
                 deleteItem(this.target);
             } else {
                 selector.value--;
-                cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
+                cart1.remove( this.target.dataset.id );
+            //     cart[this.target.dataset.id] = this.target.querySelector('.counter-wrapper>input').value;
             }
             totalPrice();
             emptyCart();

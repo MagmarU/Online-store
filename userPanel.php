@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- <script defer src="./js/script.js"></script> -->
     <script src="./js/jquery.js"></script>
-    <script src="./js/registration.js"></script>
+    <script type="module" src="./js/registration.js"></script>
     <script src="./node_modules/blueimp-md5/js/md5.min.js"></script>
     <title>Electro</title>
 </head>

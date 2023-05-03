@@ -16,10 +16,12 @@ class User{
     }
 };
 
+import {Cart} from '../catalogs/cart_module.js';
 
 $(document).ready(function () {
     $('.login-panel>form').submit(function (e) {
         e.preventDefault();
+        
         if ( e.target.getAttribute('name') === 'registration_form' ) {
             let user = new User( this, 'registration' );
             $.ajax({
@@ -29,47 +31,46 @@ $(document).ready(function () {
                 cache: false,
             }).done(function(result){
                 alert( result );
+                window.open('../index.html', '_self');
             });
 
         } else if( e.target.getAttribute('name') === 'login_form' ) {
             let user = new User( this, 'login' );
-            console.log(user);
+
             $.ajax({
                 url: './authorization/handler.php',
                 type: 'POST',
                 data: user,
-            }).done(function(result){
-                result = JSON.parse( result );
-                // console.log( (result.map( item => item.email )).includes( user['email'] ) );
-                // result = result.foreach()
-                // result = result.forEach(item => item);
-                // let parseResult = [];
-                for( let elem of result ) {
-                    // console.log( elem )
-                    // console.log( Object.entries(elem) );
-                }
-                // result.forEach(item => parseResult.push(Object.entries(item)) );
-                // console.log( parseResult );
-
-                // if( user['email'] === r )
-                for( let elem of result ) {
-                    if( user['email'] == elem['email'] || user['password'] == elem['password'] ) {
+            }).done(function(userDB){
+                if(userDB.length != 2){
+                    userDB = JSON.parse( userDB )[0];
+                    if( user.password == userDB['password'] ){
                         alert( 'Вы авторизовались' );
                         $.ajax({
                             method: 'POST',
                             data: {
                                 action: 'entered',
+                                user: userDB,
                             },
                             url: './authorization/login.php'
-                        });
-                        break;
+                        }).done( function(result){
+                            localStorage.setItem('user', JSON.stringify( userDB ));
+                            let promise = new Promise( resolve => {
+                                let cart = new Cart( userDB );
+                                cart.onLoad();
+                            } )
+                            promise.then( () => {
+                                // window.open('../index.html', '_self');
+                            });
+                        } );
+                        
+                        
+                    } else {
+                        alert( 'Неверный пароль' );
                     }
-                    // else{
-                    //     alert('Вы не авторизовались');
-                    // }
-                }
+                } 
+                else alert('Пользователя с данным email не существует');
             });
         }
-
     });
 });
